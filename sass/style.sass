@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap')
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: 'Lato', sans-serif
+
+li
+    list-style: none
+a
+    text-decoration: none
+img
+    max-width: 100%
+    display: block
+
+.container
+    max-width: 1150px
+    width: 100%
+    padding: 0 10px
+    margin: 0 auto
+
+.container-fluid
+    max-width: 1650px
+    width: 100%
+    // padding: 0 10px
+    margin: 0 auto
+
+.header
+    background-image: url("../img/hero.jpg")
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    height: 100vh
+    &__inner
+        display: flex
+        justify-content: center
+        align-items: center
+        padding-top: 35px
+    .logo
+        padding: 0 65px
+    .menu
+        display: flex
+        justify-content: space-between
+
+    li:first-child
+        margin-right: 70px
+    a
+        color: #4d4959
+        font-family: Lato
+        font-size: 13px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 2.6px
+
+.new
+    &__inner
+        padding: 117px 0 142px 0
+        display: flex
+        flex-direction: column
+        align-items: center
+    .icon
+        margin-bottom: 35px
+    .title
+        margin-bottom: 35px
+        color: #353738
+        font-family: Lato
+        font-size: 18px
+        font-weight: 700
+        text-align: center
+        text-transform: uppercase
+        letter-spacing: 3.6px
+    .text
+        color: #848789
+        font-family: Lato
+        font-size: 18px
+        font-weight: 400
+        line-height: 34px
+        text-align: center
+
+.bicycle-company
+    .grid-container
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 1fr 0.5fr
+        gap: 0px 0px
+        grid-template-areas: "b1 b1 b2" "b1 b1 b3"
+        .b1
+            grid-area: b1
+            height: 600px
+            background-image: url("../img/bicycle company/bicycle_company.jpg")
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            display: flex
+            justify-content: center
+            align-items: center
+        .b2
+            grid-area: b2
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 70px 68px 0px 67px
+            .icon
+                margin-bottom: 31px
+            .title
+                margin-bottom: 26px
+                color: #353738
+                font-family: Lato
+                font-size: 18px
+                font-weight: 700
+                text-align: center
+                text-transform: uppercase
+                letter-spacing: 3.6px
+            .text
+                color: #848789
+                font-family: Lato
+                font-size: 16px
+                font-weight: 400
+                line-height: 30px
+                text-align: justifyLeft
+        .b3
+            grid-area: b3
+            background-image: url("../img/bicycle company/Bicycle_saddle.jpg")
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+
+.vintage
+    .grid-container
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 1fr 0.5fr
+        gap: 0px 0px
+        grid-template-areas: "b2 b1 b1" "b3 b1 b1"
+        .b1
+            grid-area: b1
+            height: 600px
+            background-image: url("../img/vintage/Vintage_bicycle.jpg")
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            display: flex
+            justify-content: center
+            align-items: center
+        .b2
+            grid-area: b2
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 70px 68px 0px 67px
+        .b3
+            grid-area: b3
+            background-image: url("../img/vintage/Bicycle_saddle.jpg")
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+
+
+
+
+
+
+
+
+.stay-on
+    &__inner
+        padding: 109px 0 111px 0
+        display: flex
+        flex-direction: column
+        align-items: center
+    .logo
+        margin-bottom: 39px
+    .title
+        color: #848789
+        font-family: Lato
+        font-size: 24px
+        font-style: italic
+        line-height: 34px
+        text-align: center
+        margin-bottom: 35px
+    .form
+        display: flex
+        justify-content: center
+        input
+            width: 400px
+            height: 69px
+            border: 1px solid #d3d7d9
+            background-color: #ffffff
+            margin-right: 8px
+            font-family: Lato
+            font-size: 20px
+            padding: 28px 28px 24px 20px
+        input::placeholder
+            color: #929292
+            font-family: Lato
+            font-size: 20px
+            font-style: italic
+            line-height: 24px
+            padding: 28px 28px 24px 0px
+        button
+            width: 126px
+            height: 69px
+            background-color: #64c29e
+            border: none
+            color: #ffffff
+            font-family: Lato
+            font-size: 24px
+            font-weight: 300
+            line-height: 24px
+            text-align: center
+            text-transform: uppercase
+            cursor: pointer
+
+.footer
+    background-color: #f7f7f7
+    &__inner
+        padding: 108px 0
+        display: flex
+        justify-content: center
+    .adress
+        .city
+            color: #848789
+            font-family: Lato
+            font-size: 16px
+            font-weight: 700
+            line-height: 17.87px
+        .street
+            color: #848789
+            font-family: Lato
+            font-size: 14px
+            font-style: italic
+            line-height: 17.87px
+        .mail
+            color: #848789
+            font-family: Lato
+            font-size: 14px
+            font-style: italic
+            line-height: 17.87px
+
+    .crafted
+        display: flex
+        align-items: center
+        .sign
+            color: #848789
+            font-family: Lato
+            font-size: 14px
+            font-style: italic
+            line-height: 17.87px
+            margin-right: 10px
+    .social
+        // margin: 0 auto
+        margin-left: 246px
+        margin-right: 330px
+        display: flex
+        align-items: center
+        // justify-content: center
+        // flex-grow: 1
+        &__item
+            width: 35px
+            height: 34px
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+        .fab
+            color: #ffff
+        .twitter
+            background-color: #78cdf0
+        .facebook
+            background-color: #537bbd
+            margin: 0 15px
+        .pinterest
+            background-color: #eb5755
