@@ -148,7 +148,7 @@ img {
       font-size: 16px;
       font-weight: 400;
       line-height: 30px;
-      text-align: justifyLeft; }
+      text-align: justify; }
   .bicycle-company .grid-container .b3 {
     grid-area: b3;
     background-image: url("../img/bicycle company/Bicycle_saddle.jpg");
@@ -197,6 +197,37 @@ img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
+
+.bicecle-slider .my-slider {
+  padding: 124px 263px 68px 300px; }
+  .bicecle-slider .my-slider__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .bicecle-slider .my-slider__item .wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
 
 .stay-on__inner {
   padding: 109px 0 111px 0;
