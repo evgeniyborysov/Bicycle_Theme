@@ -55,15 +55,18 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    .header .menu__link {
+      color: #4d4959;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2.6px; }
+    .header .menu__link:hover {
+      color: #64c29e;
+      border-bottom: 1px solid #64c29e; }
   .header li:first-child {
     margin-right: 70px; }
-  .header a {
-    color: #4d4959;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2.6px; }
 
 .new {
   background-color: #f7f7f7; }
@@ -379,7 +382,34 @@ img {
   .shop__grid-container .box {
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    cursor: pointer; }
+    .shop__grid-container .box .inner {
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background: rgba(100, 194, 158, 0.7);
+      opacity: 0;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+      .shop__grid-container .box .inner .title {
+        color: #ffffff;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 2.8px;
+        text-transform: uppercase; }
+    .shop__grid-container .box .inner:hover {
+      opacity: 1; }
   .shop__grid-container .box1 {
     height: 267px;
     grid-area: b1;
@@ -507,12 +537,18 @@ img {
     border: none;
     color: #ffffff;
     font-family: Lato;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 300;
     line-height: 24px;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer; }
+  .stay-on .form button:hover {
+    background-color: #ffffff;
+    color: #64c29e;
+    border: 2px solid #64c29e;
+    font-size: 28px;
+    font-weight: 400; }
 
 .footer {
   background-color: #f7f7f7; }
