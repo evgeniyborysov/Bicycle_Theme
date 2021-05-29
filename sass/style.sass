@@ -50,12 +50,13 @@ img
     a
         color: #4d4959
         font-family: Lato
-        font-size: 13px
+        font-size: 16px
         font-weight: 700
         text-transform: uppercase
         letter-spacing: 2.6px
 
 .new
+    background-color: #f7f7f7
     &__inner
         padding: 117px 0 142px 0
         display: flex
@@ -102,8 +103,9 @@ img
             display: flex
             flex-direction: column
             align-items: center
-            padding: 70px 68px 0px 67px
+            // padding: 70px 68px 0px 67px
             .icon
+                padding-top: 70px
                 margin-bottom: 31px
             .title
                 margin-bottom: 26px
@@ -121,6 +123,7 @@ img
                 font-weight: 400
                 line-height: 30px
                 text-align: justify
+                padding: 0 68px
         .b3
             grid-area: b3
             background-image: url("../img/bicycle company/Bicycle_saddle.jpg")
@@ -150,7 +153,28 @@ img
             display: flex
             flex-direction: column
             align-items: center
-            padding: 70px 68px 0px 67px
+            // padding: 70px 68px 0px 67px
+            .icon
+                padding-top: 61px
+                margin-bottom: 29px
+            .title
+                color: #353738
+                font-family: Lato
+                font-size: 18px
+                font-weight: 700
+                text-align: center
+                text-transform: uppercase
+                margin-bottom: 26px
+                letter-spacing: 3.6px
+            .text
+                color: #848789
+                font-family: Lato
+                font-size: 16px
+                font-weight: 400
+                line-height: 29.99px
+                text-align: justify
+                padding: 0 68px
+
         .b3
             grid-area: b3
             background-image: url("../img/vintage/Bicycle_saddle.jpg")
@@ -158,9 +182,66 @@ img
             background-position: center
             background-repeat: no-repeat
 
-.bicecle-slider
+.retro-bike
+    .grid-container
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 1fr 0.5fr
+        gap: 0px 0px
+        grid-template-areas: "b1 b2 b3" "b1 b4 b3"
+        .b1
+            grid-area: b1
+            height: 600px
+            background-image: url("../img/retro bike/Retro_frame.jpg")
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            display: flex
+            justify-content: center
+            align-items: center
+        .b2
+            grid-area: b2
+            display: flex
+            flex-direction: column
+            align-items: center
+            // padding: 70px 68px 0px 67px
+            .icon
+                padding-top: 60px
+                margin-bottom: 20px
+            .title
+                color: #353738
+                font-family: Lato
+                font-size: 18px
+                font-weight: 700
+                text-align: center
+                text-transform: uppercase
+                margin-bottom: 26px
+                letter-spacing: 3.6px
+            .text
+                color: #848789
+                font-family: Lato
+                font-size: 16px
+                font-weight: 400
+                line-height: 29.99px
+                text-align: justify
+                padding: 0 68px
+        .b3
+            grid-area: b3
+            background-image: url("../img/retro bike/Retro_bicycle.jpg")
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+        .b4
+            grid-area: b4
+            background-image: url("../img/retro bike/Retro_wheel.jpg")
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+
+.bicycle-slider
+    background-color: #f7f7f7
     .my-slider
-        padding: 124px 263px 68px 300px
+        padding: 124px 0px 68px 0px
         &__item
             display: flex
             flex-direction: column
@@ -171,11 +252,112 @@ img
                 flex-direction: column
                 justify-content: center
                 align-items: center
+            .icon
+                margin-bottom: 30px
+                .fa-twitter
+                    color: #56c7ee
+                    font-size: 24px
+            .title
+                margin-bottom: 27px
+                .adress
+                    color: #353738
+                    font-family: Lato
+                    font-size: 18px
+                    font-weight: 700
+                    text-align: center
+                    margin-right: 5px
+                .time
+                    color: #848789
+                    font-size: 18px
+                    font-family: Lato
+                    font-weight: 300
+                    font-style: normal
+                    letter-spacing: 1.8px
+                    line-height: normal
+            .text
+                color: #848789
+                font-family: Lato
+                font-size: 24px
+                font-style: italic
+                letter-spacing: normal
+                line-height: 34px
+                text-align: center
+                margin-bottom: 104px
+        .slick-dots
+            text-align: center
+            display: flex
+            justify-content: center
+            list-style: none
+            button
+                text-indent: -9999px
+                border: 1px solid #c8c8c8
+                border-radius: 50%
+                width: 11px
+                height: 11px
+                outline: none
+                margin: 9px
+            li[class="slick-active"] button
+                background-color: #a9afb3
 
+.shop
+    &__grid-container
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
+        grid-template-rows: 1fr 1fr 0.7fr
+        gap: 0px 0px
+        grid-template-areas: "b1 b2 b4 b5 b6 b6" "b3 b3 b4 b5 b7 b8" "b9 b9 b9 b9 b9 b9"
+        .box
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+        .box1
+            height: 267px
+            grid-area: b1
+            background-image: url("../img/bike shop/shop_box1.jpg")
+        .box2
+            grid-area: b2
+            background-image: url("../img/bike shop/shop_box2.jpg")
+        .box3
+            grid-area: b3
+            background-image: url("../img/bike shop/shop_box3.jpg")
+        .box4
+            grid-area: b4
+            background-image: url("../img/bike shop/shop_box4.jpg")
+        .box5
+            grid-area: b5
+            background-image: url("../img/bike shop/shop_box5.jpg")
+        .box6
+            grid-area: b6
+            background-image: url("../img/bike shop/shop_box6.jpg")
+        .box7
+            grid-area: b7
+            background-image: url("../img/bike shop/shop_box7.jpg")
+        .box8
+            grid-area: b8
+            background-image: url("../img/bike shop/shop_box8.jpg")
 
-
-
-
+        .box9
+            grid-area: b9
+            height: 200px
+            background-color: #282f35
+            display: flex
+            justify-content: center
+            align-items: center
+            button
+                color: #ffffff
+                font-family: Lato
+                font-size: 14px
+                font-weight: 700
+                text-align: center
+                text-transform: uppercase
+                letter-spacing: 2.8px
+                padding: 20px 55px
+                background-color: transparent
+                cursor: pointer
+                border: 1px solid #5e6368
+            button:hover
+                color: #64c29e
+                border: 1px solid #64c29e
 
 
 

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="./slick/slick.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Bicycle</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
     <main>
         <section class="new">
             <div class="container">
-                <div class="new__inner">
+                <div class="new__inner" data-aos="fade-right" data-aos-duration="1000"  data-aos-delay="300">
                     <div class="icon">
                         <img src="./img/Icon_new.png" alt="icon">
                     </div>
@@ -108,16 +109,42 @@
                 </div>
             </div>
         </section>
+        <section class="retro-bike">
+            <div class="container-fluid">
+                <div class="grid-container">
+                    <div class="b1">
+                        <img src="./img/retro bike/Retro_Logo.png" alt="logo">
+                    </div>
+                    <div class="b2">
+                        <div class="icon">
+                            <img src="./img/retro bike/Icon_retro_bike.png" alt="icon">
+                        </div>
+                        <div class="title">
+                            <h3>retrò Bike - M. Hulot</h3>
+                        </div>
+                        <div class="text">
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type 
+                                specimen book. It has survived.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="b3"></div>
+                    <div class="b4"></div>
+                </div>
+            </div>
+        </section>
 
-        <section class="bicecle-slider">
-            <div class="cotainer">
+        <section class="bicycle-slider">
+            <div class="container">
                 <div class="my-slider">
                     <div class="my-slider__item">
                         <div class="wrap">
                             <div class="icon"><i class="fab fa-twitter"></i></div>
                             <div class="title">
-                                <span>AOD New York  @aod</span>
-                                <span>/  35 min</span>
+                                <span class="adress">AOD New York @aod</span>
+                                <span class="time"> / 35 min</span>
                             </div>
                             <div class="text">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -128,32 +155,55 @@
                         </div>
 
                     </div>
-                    <div class="slider__item">
-                        <div class="icon"><i class="fab fa-twitter"></i></div>
-                        <div class="title">
-                            <span>AOD New York  @aod</span>
-                            <span>/  35 min</span>
-                        </div>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Sed ut tellus ac nulla semper rhoncus. Nullam a odio <br> porttitor, 
-                                dictum turpis vitae, pretium ante amet.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slider__item">
-                        <div class="icon"><i class="fab fa-twitter"></i></div>
-                        <div class="title">
-                            <span>AOD New York  @aod</span>
-                            <span>/  35 min</span>
-                        </div>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Sed ut tellus ac nulla semper rhoncus. Nullam a odio <br> porttitor, 
-                                dictum turpis vitae, pretium ante amet.
-                            </p>
+                    <div class="my-slider__item">
+                        <div class="wrap">
+                            <div class="icon"><i class="fab fa-twitter"></i></div>
+                            <div class="title">
+                                <span class="adress">AOD New York @aod</span>
+                                <span class="time"> / 35 min</span>
+                            </div>
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Sed ut tellus ac nulla semper rhoncus. Nullam a odio <br> porttitor, 
+                                    dictum turpis vitae, pretium ante amet.
+                                </p>
+                            </div>
                         </div>
                     </div>
+                    <div class="my-slider__item">
+                        <div class="wrap">
+                            <div class="icon"><i class="fab fa-twitter"></i></div>
+                            <div class="title">
+                                <span class="adress">AOD New York @aod</span>
+                                <span class="time"> / 35 min</span>
+                            </div>
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Sed ut tellus ac nulla semper rhoncus. Nullam a odio <br> porttitor, 
+                                    dictum turpis vitae, pretium ante amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop">
+            <div class="container-fluid">
+                <div class="shop__grid-container">
+                    <div class="box1 box"></div>
+                    <div class="box2 box"></div>
+                    <div class="box3 box"></div>
+                    <div class="box4 box"></div>
+                    <div class="box5 box"></div>
+                    <div class="box6 box"></div>
+                    <div class="box7 box"></div>
+                    <div class="box8 box"></div>
+                    <div class="box9 box">
+                        <button>DISCOVER THE SHOP</button>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -206,6 +256,10 @@
 
 	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="./slick/slick.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

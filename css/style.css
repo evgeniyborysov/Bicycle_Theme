@@ -60,41 +60,43 @@ img {
   .header a {
     color: #4d4959;
     font-family: Lato;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.6px; }
 
-.new__inner {
-  padding: 117px 0 142px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-.new .icon {
-  margin-bottom: 35px; }
-.new .title {
-  margin-bottom: 35px;
-  color: #353738;
-  font-family: Lato;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3.6px; }
-.new .text {
-  color: #848789;
-  font-family: Lato;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 34px;
-  text-align: center; }
+.new {
+  background-color: #f7f7f7; }
+  .new__inner {
+    padding: 117px 0 142px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .new .icon {
+    margin-bottom: 35px; }
+  .new .title {
+    margin-bottom: 35px;
+    color: #353738;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3.6px; }
+  .new .text {
+    color: #848789;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center; }
 
 .bicycle-company .grid-container {
   display: grid;
@@ -129,9 +131,9 @@ img {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    padding: 70px 68px 0px 67px; }
+            align-items: center; }
     .bicycle-company .grid-container .b2 .icon {
+      padding-top: 70px;
       margin-bottom: 31px; }
     .bicycle-company .grid-container .b2 .title {
       margin-bottom: 26px;
@@ -148,7 +150,8 @@ img {
       font-size: 16px;
       font-weight: 400;
       line-height: 30px;
-      text-align: justify; }
+      text-align: justify;
+      padding: 0 68px; }
   .bicycle-company .grid-container .b3 {
     grid-area: b3;
     background-image: url("../img/bicycle company/Bicycle_saddle.jpg");
@@ -189,8 +192,27 @@ img {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    padding: 70px 68px 0px 67px; }
+            align-items: center; }
+    .vintage .grid-container .b2 .icon {
+      padding-top: 61px;
+      margin-bottom: 29px; }
+    .vintage .grid-container .b2 .title {
+      color: #353738;
+      font-family: Lato;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 26px;
+      letter-spacing: 3.6px; }
+    .vintage .grid-container .b2 .text {
+      color: #848789;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 29.99px;
+      text-align: justify;
+      padding: 0 68px; }
   .vintage .grid-container .b3 {
     grid-area: b3;
     background-image: url("../img/vintage/Bicycle_saddle.jpg");
@@ -198,9 +220,30 @@ img {
     background-position: center;
     background-repeat: no-repeat; }
 
-.bicecle-slider .my-slider {
-  padding: 124px 263px 68px 300px; }
-  .bicecle-slider .my-slider__item {
+.retro-bike .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas: "b1 b2 b3" "b1 b4 b3"; }
+  .retro-bike .grid-container .b1 {
+    grid-area: b1;
+    height: 600px;
+    background-image: url("../img/retro bike/Retro_frame.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .retro-bike .grid-container .b2 {
+    grid-area: b2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -208,13 +251,47 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .bicecle-slider .my-slider__item .wrap {
+    .retro-bike .grid-container .b2 .icon {
+      padding-top: 60px;
+      margin-bottom: 20px; }
+    .retro-bike .grid-container .b2 .title {
+      color: #353738;
+      font-family: Lato;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 26px;
+      letter-spacing: 3.6px; }
+    .retro-bike .grid-container .b2 .text {
+      color: #848789;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 29.99px;
+      text-align: justify;
+      padding: 0 68px; }
+  .retro-bike .grid-container .b3 {
+    grid-area: b3;
+    background-image: url("../img/retro bike/Retro_bicycle.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .retro-bike .grid-container .b4 {
+    grid-area: b4;
+    background-image: url("../img/retro bike/Retro_wheel.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+.bicycle-slider {
+  background-color: #f7f7f7; }
+  .bicycle-slider .my-slider {
+    padding: 124px 0px 68px 0px; }
+    .bicycle-slider .my-slider__item {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -228,6 +305,134 @@ img {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+      .bicycle-slider .my-slider__item .wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      .bicycle-slider .my-slider__item .icon {
+        margin-bottom: 30px; }
+        .bicycle-slider .my-slider__item .icon .fa-twitter {
+          color: #56c7ee;
+          font-size: 24px; }
+      .bicycle-slider .my-slider__item .title {
+        margin-bottom: 27px; }
+        .bicycle-slider .my-slider__item .title .adress {
+          color: #353738;
+          font-family: Lato;
+          font-size: 18px;
+          font-weight: 700;
+          text-align: center;
+          margin-right: 5px; }
+        .bicycle-slider .my-slider__item .title .time {
+          color: #848789;
+          font-size: 18px;
+          font-family: Lato;
+          font-weight: 300;
+          font-style: normal;
+          letter-spacing: 1.8px;
+          line-height: normal; }
+      .bicycle-slider .my-slider__item .text {
+        color: #848789;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: italic;
+        letter-spacing: normal;
+        line-height: 34px;
+        text-align: center;
+        margin-bottom: 104px; }
+    .bicycle-slider .my-slider .slick-dots {
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      list-style: none; }
+      .bicycle-slider .my-slider .slick-dots button {
+        text-indent: -9999px;
+        border: 1px solid #c8c8c8;
+        border-radius: 50%;
+        width: 11px;
+        height: 11px;
+        outline: none;
+        margin: 9px; }
+      .bicycle-slider .my-slider .slick-dots li[class="slick-active"] button {
+        background-color: #a9afb3; }
+
+.shop__grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.7fr;
+  gap: 0px 0px;
+  grid-template-areas: "b1 b2 b4 b5 b6 b6" "b3 b3 b4 b5 b7 b8" "b9 b9 b9 b9 b9 b9"; }
+  .shop__grid-container .box {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .shop__grid-container .box1 {
+    height: 267px;
+    grid-area: b1;
+    background-image: url("../img/bike shop/shop_box1.jpg"); }
+  .shop__grid-container .box2 {
+    grid-area: b2;
+    background-image: url("../img/bike shop/shop_box2.jpg"); }
+  .shop__grid-container .box3 {
+    grid-area: b3;
+    background-image: url("../img/bike shop/shop_box3.jpg"); }
+  .shop__grid-container .box4 {
+    grid-area: b4;
+    background-image: url("../img/bike shop/shop_box4.jpg"); }
+  .shop__grid-container .box5 {
+    grid-area: b5;
+    background-image: url("../img/bike shop/shop_box5.jpg"); }
+  .shop__grid-container .box6 {
+    grid-area: b6;
+    background-image: url("../img/bike shop/shop_box6.jpg"); }
+  .shop__grid-container .box7 {
+    grid-area: b7;
+    background-image: url("../img/bike shop/shop_box7.jpg"); }
+  .shop__grid-container .box8 {
+    grid-area: b8;
+    background-image: url("../img/bike shop/shop_box8.jpg"); }
+  .shop__grid-container .box9 {
+    grid-area: b9;
+    height: 200px;
+    background-color: #282f35;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .shop__grid-container .box9 button {
+      color: #ffffff;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2.8px;
+      padding: 20px 55px;
+      background-color: transparent;
+      cursor: pointer;
+      border: 1px solid #5e6368; }
+    .shop__grid-container .box9 button:hover {
+      color: #64c29e;
+      border: 1px solid #64c29e; }
 
 .stay-on__inner {
   padding: 109px 0 111px 0;
