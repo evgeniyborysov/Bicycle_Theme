@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap')
+// @import 'media.sass'
 
 *
     margin: 0
@@ -86,160 +87,83 @@ img
 
 .bicycle-company
     .grid-container
-        display: grid
-        grid-template-columns: 1fr 1fr 1fr
-        grid-template-rows: 1fr 0.5fr
-        gap: 0px 0px
         grid-template-areas: "b1 b1 b2" "b1 b1 b3"
         .b1
-            grid-area: b1
-            height: 600px
             background-image: url("../img/bicycle company/bicycle_company.jpg")
-            background-size: cover
-            background-position: center
-            background-repeat: no-repeat
-            display: flex
-            justify-content: center
-            align-items: center
-        .b2
-            grid-area: b2
-            display: flex
-            flex-direction: column
-            align-items: center
-            // padding: 70px 68px 0px 67px
-            .icon
-                padding-top: 70px
-                margin-bottom: 31px
-            .title
-                margin-bottom: 26px
-                color: #353738
-                font-family: Lato
-                font-size: 18px
-                font-weight: 700
-                text-align: center
-                text-transform: uppercase
-                letter-spacing: 3.6px
-            .text
-                color: #848789
-                font-family: Lato
-                font-size: 16px
-                font-weight: 400
-                line-height: 30px
-                text-align: justify
-                padding: 0 68px
+
         .b3
-            grid-area: b3
             background-image: url("../img/bicycle company/Bicycle_saddle.jpg")
-            background-size: cover
-            background-position: center
-            background-repeat: no-repeat
 
 .vintage
     .grid-container
-        display: grid
-        grid-template-columns: 1fr 1fr 1fr
-        grid-template-rows: 1fr 0.5fr
-        gap: 0px 0px
         grid-template-areas: "b2 b1 b1" "b3 b1 b1"
         .b1
-            grid-area: b1
-            height: 600px
             background-image: url("../img/vintage/Vintage_bicycle.jpg")
-            background-size: cover
-            background-position: center
-            background-repeat: no-repeat
-            display: flex
-            justify-content: center
-            align-items: center
-        .b2
-            grid-area: b2
-            display: flex
-            flex-direction: column
-            align-items: center
-            // padding: 70px 68px 0px 67px
-            .icon
-                padding-top: 61px
-                margin-bottom: 29px
-            .title
-                color: #353738
-                font-family: Lato
-                font-size: 18px
-                font-weight: 700
-                text-align: center
-                text-transform: uppercase
-                margin-bottom: 26px
-                letter-spacing: 3.6px
-            .text
-                color: #848789
-                font-family: Lato
-                font-size: 16px
-                font-weight: 400
-                line-height: 29.99px
-                text-align: justify
-                padding: 0 68px
 
         .b3
-            grid-area: b3
             background-image: url("../img/vintage/Bicycle_saddle.jpg")
-            background-size: cover
-            background-position: center
-            background-repeat: no-repeat
 
 .retro-bike
     .grid-container
-        display: grid
-        grid-template-columns: 1fr 1fr 1fr
-        grid-template-rows: 1fr 0.5fr
-        gap: 0px 0px
         grid-template-areas: "b1 b2 b3" "b1 b4 b3"
         .b1
-            grid-area: b1
-            height: 600px
             background-image: url("../img/retro bike/Retro_frame.jpg")
-            background-size: cover
-            background-position: center
-            background-repeat: no-repeat
-            display: flex
-            justify-content: center
-            align-items: center
-        .b2
-            grid-area: b2
-            display: flex
-            flex-direction: column
-            align-items: center
-            // padding: 70px 68px 0px 67px
-            .icon
-                padding-top: 60px
-                margin-bottom: 20px
-            .title
-                color: #353738
-                font-family: Lato
-                font-size: 18px
-                font-weight: 700
-                text-align: center
-                text-transform: uppercase
-                margin-bottom: 26px
-                letter-spacing: 3.6px
-            .text
-                color: #848789
-                font-family: Lato
-                font-size: 16px
-                font-weight: 400
-                line-height: 29.99px
-                text-align: justify
-                padding: 0 68px
+
         .b3
-            grid-area: b3
             background-image: url("../img/retro bike/Retro_bicycle.jpg")
-            background-size: cover
-            background-position: center
-            background-repeat: no-repeat
         .b4
-            grid-area: b4
             background-image: url("../img/retro bike/Retro_wheel.jpg")
-            background-size: cover
-            background-position: center
-            background-repeat: no-repeat
+
+.grid-bike
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr 0.5fr
+    gap: 0px 0px
+    grid-template-areas: "b1 b2 b3" "b1 b4 b3"
+    .b1
+        grid-area: b1
+        height: 600px
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        display: flex
+        justify-content: center
+        align-items: center
+    .b2
+        grid-area: b2
+        display: flex
+        flex-direction: column
+        align-items: center
+        .icon
+            padding-top: 50px
+            margin-bottom: 15px
+        .title
+            color: #353738
+            font-family: Lato
+            font-size: 18px
+            font-weight: 700
+            text-align: center
+            text-transform: uppercase
+            margin-bottom: 26px
+            letter-spacing: 3.6px
+        .text
+            color: #848789
+            font-family: Lato
+            font-size: 16px
+            font-weight: 400
+            line-height: 30px
+            text-align: justify
+            padding: 0 68px
+    .b3
+        grid-area: b3
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+    .b4
+        grid-area: b4
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
 
 .bicycle-slider
     background-color: #f7f7f7
@@ -401,6 +325,7 @@ img
         margin-bottom: 35px
     .form
         display: flex
+        flex-wrap: wrap
         justify-content: center
         input
             width: 400px
@@ -440,61 +365,235 @@ img
 
 .footer
     background-color: #f7f7f7
-    &__inner
+    .grid-inner
         padding: 108px 0
-        display: flex
-        justify-content: center
-    .adress
-        .city
-            color: #848789
-            font-family: Lato
-            font-size: 16px
-            font-weight: 700
-            line-height: 17.87px
-        .street
-            color: #848789
-            font-family: Lato
-            font-size: 14px
-            font-style: italic
-            line-height: 17.87px
-        .mail
-            color: #848789
-            font-family: Lato
-            font-size: 14px
-            font-style: italic
-            line-height: 17.87px
+        display: grid
+        grid-template-columns: 0.5fr 1fr 0.5fr
+        grid-template-rows: 1fr
+        gap: 0px 0px
+        grid-template-areas: "adress social crafted"
 
-    .crafted
-        display: flex
-        align-items: center
-        .sign
-            color: #848789
-            font-family: Lato
-            font-size: 14px
-            font-style: italic
-            line-height: 17.87px
-            margin-right: 10px
-    .social
-        // margin: 0 auto
-        margin-left: 246px
-        margin-right: 330px
-        display: flex
-        align-items: center
-        // justify-content: center
-        // flex-grow: 1
-        &__item
-            width: 35px
-            height: 34px
-            border-radius: 50%
+        .adress
+            grid-area: adress
+            .city
+                color: #848789
+                font-family: Lato
+                font-size: 16px
+                font-weight: 700
+                line-height: 17.87px
+            .street
+                color: #848789
+                font-family: Lato
+                font-size: 14px
+                font-style: italic
+                line-height: 17.87px
+            .mail
+                color: #848789
+                font-family: Lato
+                font-size: 14px
+                font-style: italic
+                line-height: 17.87px
+
+        .crafted
+            grid-area: crafted
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            .sign
+                color: #848789
+                font-family: Lato
+                font-size: 14px
+                font-style: italic
+                line-height: 17.87px
+                margin-right: 10px
+        .social
+            grid-area: social
             display: flex
             justify-content: center
             align-items: center
-        .fab
-            color: #ffff
-        .twitter
-            background-color: #78cdf0
-        .facebook
-            background-color: #537bbd
-            margin: 0 15px
-        .pinterest
-            background-color: #eb5755
+            &__item
+                width: 35px
+                height: 34px
+                border-radius: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+            &__item:hover
+                transform: scale(1.2)
+            .fab
+                color: #ffff
+            .twitter
+                background-color: #78cdf0
+            .facebook
+                background-color: #537bbd
+                margin: 0 15px
+            .pinterest
+                background-color: #eb5755
+
+
+@media (max-width: 1260px)
+
+    .grid-bike
+        .b2
+            .icon
+                padding-top: 50px
+                margin-bottom: 10px
+            .title
+                margin-bottom: 15px
+            .text
+                padding: 0 30px
+                text-align: center
+
+@media (max-width: 1201px)
+
+
+    .new
+        &__inner
+            padding: 50px 0
+            .icon
+                margin-bottom: 20px
+            .title
+                margin-bottom: 20px
+    .bicycle-slider .my-slider
+        padding: 50px 0px
+        .text
+            margin-bottom: 25px
+    .shop
+        &__grid-container
+
+    .stay-on
+        &__inner
+            padding: 50px 0px
+
+    .footer
+        .grid-inner
+            padding: 50px 0px
+
+@media (max-width: 1025px)
+
+    .bicycle-slider .my-slider
+        padding: 15px
+        &__item
+            .wrap
+                .icon
+                    margin-bottom: 20px
+                .title
+                    margin-bottom: 20px
+                .text
+                    margin-bottom: 20px
+                    font-size: 20px
+    .new
+        &__inner
+            padding: 15px 0
+            .icon
+                margin-bottom: 10px
+            .title
+                margin-bottom: 20px
+                font-size: 16px
+            .text
+                font-size: 16px
+                font-weight: 400
+
+    .shop
+        &__grid-container
+            grid-template-columns: 1fr 1fr 1fr 1fr 
+            grid-template-rows: 1fr 1fr 0.5fr
+            grid-template-areas: "b1 b2 b3 b4" "b5 b6 b7 b8" "b9 b9 b9 b9"
+            .box9
+                height: 150px
+    .stay-on
+        &__inner
+            padding: 20px 0
+
+@media (max-width: 866px)
+    .bicycle-slider .my-slider
+        padding: 10px
+        &__item
+            .wrap
+                .icon
+                    margin-bottom: 10px
+                .title
+                    margin-bottom: 10px
+                .text
+                    margin-bottom: 10px
+                    font-size: 18px
+
+
+    .bicycle-company
+        .grid-bike
+            grid-template-rows: 1fr 0.4fr 0.5fr
+            grid-template-areas: "b1 b1 b1" "b2 b2 b2" "b3 b3 b3"
+            .b1
+                height: 300px
+            .b2
+                .icon 
+                    padding-top: 10px
+                .title
+                    margin: 0
+                .text
+                    padding: 10px
+    .vintage
+        .grid-bike
+            grid-template-rows: 1fr 0.4fr 0.5fr
+            grid-template-areas: "b1 b1 b1" "b2 b2 b2" "b3 b3 b3"
+            .b1
+                height: 300px
+            .b2
+                .icon 
+                    padding-top: 10px
+                .title
+                    margin: 0
+                .text
+                    padding: 10px
+    .retro-bike
+        .grid-bike
+            grid-template-rows: 1fr 0.4fr 0.4fr 0.4fr
+            grid-template-areas: "b1 b1 b1" "b2 b2 b2" "b3 b3 b3" "b4 b4 b4"
+            .b1
+                height: 300px
+            .b2
+                .icon 
+                    padding-top: 10px
+                .title
+                    margin: 0
+                .text
+                    padding: 10px
+
+@media (max-width: 720px)
+    .header__inner
+        justify-content: space-between
+        .menu
+            display: none
+        .logo
+            padding: 0
+
+    .footer
+        .grid-inner
+            grid-template-columns: 1fr 
+            grid-template-rows: 1fr 1fr 1fr   
+            grid-template-areas: "adress" "social" "crafted"
+        .grid-inner 
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 20px 0
+            .adress
+                display: flex
+                flex-direction: column
+                align-items: center
+                margin-bottom: 10px
+            .social
+                margin-bottom: 10px
+
+@media (max-width: 600px)
+    .container-fluid
+        .grid-bike
+            .b2
+                .title
+                    font-size: 14px
+
+
+
+
+
+// @import 'media.sass'

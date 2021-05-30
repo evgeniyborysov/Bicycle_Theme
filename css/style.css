@@ -102,15 +102,37 @@ img {
     text-align: center; }
 
 .bicycle-company .grid-container {
+  grid-template-areas: "b1 b1 b2" "b1 b1 b3"; }
+  .bicycle-company .grid-container .b1 {
+    background-image: url("../img/bicycle company/bicycle_company.jpg"); }
+  .bicycle-company .grid-container .b3 {
+    background-image: url("../img/bicycle company/Bicycle_saddle.jpg"); }
+
+.vintage .grid-container {
+  grid-template-areas: "b2 b1 b1" "b3 b1 b1"; }
+  .vintage .grid-container .b1 {
+    background-image: url("../img/vintage/Vintage_bicycle.jpg"); }
+  .vintage .grid-container .b3 {
+    background-image: url("../img/vintage/Bicycle_saddle.jpg"); }
+
+.retro-bike .grid-container {
+  grid-template-areas: "b1 b2 b3" "b1 b4 b3"; }
+  .retro-bike .grid-container .b1 {
+    background-image: url("../img/retro bike/Retro_frame.jpg"); }
+  .retro-bike .grid-container .b3 {
+    background-image: url("../img/retro bike/Retro_bicycle.jpg"); }
+  .retro-bike .grid-container .b4 {
+    background-image: url("../img/retro bike/Retro_wheel.jpg"); }
+
+.grid-bike {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 0.5fr;
   gap: 0px 0px;
-  grid-template-areas: "b1 b1 b2" "b1 b1 b3"; }
-  .bicycle-company .grid-container .b1 {
+  grid-template-areas: "b1 b2 b3" "b1 b4 b3"; }
+  .grid-bike .b1 {
     grid-area: b1;
     height: 600px;
-    background-image: url("../img/bicycle company/bicycle_company.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -123,7 +145,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .bicycle-company .grid-container .b2 {
+  .grid-bike .b2 {
     grid-area: b2;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -135,19 +157,19 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .bicycle-company .grid-container .b2 .icon {
-      padding-top: 70px;
-      margin-bottom: 31px; }
-    .bicycle-company .grid-container .b2 .title {
-      margin-bottom: 26px;
+    .grid-bike .b2 .icon {
+      padding-top: 50px;
+      margin-bottom: 15px; }
+    .grid-bike .b2 .title {
       color: #353738;
       font-family: Lato;
       font-size: 18px;
       font-weight: 700;
       text-align: center;
       text-transform: uppercase;
+      margin-bottom: 26px;
       letter-spacing: 3.6px; }
-    .bicycle-company .grid-container .b2 .text {
+    .grid-bike .b2 .text {
       color: #848789;
       font-family: Lato;
       font-size: 16px;
@@ -155,137 +177,13 @@ img {
       line-height: 30px;
       text-align: justify;
       padding: 0 68px; }
-  .bicycle-company .grid-container .b3 {
+  .grid-bike .b3 {
     grid-area: b3;
-    background-image: url("../img/bicycle company/Bicycle_saddle.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
-
-.vintage .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 0.5fr;
-  gap: 0px 0px;
-  grid-template-areas: "b2 b1 b1" "b3 b1 b1"; }
-  .vintage .grid-container .b1 {
-    grid-area: b1;
-    height: 600px;
-    background-image: url("../img/vintage/Vintage_bicycle.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .vintage .grid-container .b2 {
-    grid-area: b2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .vintage .grid-container .b2 .icon {
-      padding-top: 61px;
-      margin-bottom: 29px; }
-    .vintage .grid-container .b2 .title {
-      color: #353738;
-      font-family: Lato;
-      font-size: 18px;
-      font-weight: 700;
-      text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 26px;
-      letter-spacing: 3.6px; }
-    .vintage .grid-container .b2 .text {
-      color: #848789;
-      font-family: Lato;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 29.99px;
-      text-align: justify;
-      padding: 0 68px; }
-  .vintage .grid-container .b3 {
-    grid-area: b3;
-    background-image: url("../img/vintage/Bicycle_saddle.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
-
-.retro-bike .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 0.5fr;
-  gap: 0px 0px;
-  grid-template-areas: "b1 b2 b3" "b1 b4 b3"; }
-  .retro-bike .grid-container .b1 {
-    grid-area: b1;
-    height: 600px;
-    background-image: url("../img/retro bike/Retro_frame.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .retro-bike .grid-container .b2 {
-    grid-area: b2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .retro-bike .grid-container .b2 .icon {
-      padding-top: 60px;
-      margin-bottom: 20px; }
-    .retro-bike .grid-container .b2 .title {
-      color: #353738;
-      font-family: Lato;
-      font-size: 18px;
-      font-weight: 700;
-      text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 26px;
-      letter-spacing: 3.6px; }
-    .retro-bike .grid-container .b2 .text {
-      color: #848789;
-      font-family: Lato;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 29.99px;
-      text-align: justify;
-      padding: 0 68px; }
-  .retro-bike .grid-container .b3 {
-    grid-area: b3;
-    background-image: url("../img/retro bike/Retro_bicycle.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
-  .retro-bike .grid-container .b4 {
+  .grid-bike .b4 {
     grid-area: b4;
-    background-image: url("../img/retro bike/Retro_wheel.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
@@ -490,6 +388,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
@@ -552,59 +452,53 @@ img {
 
 .footer {
   background-color: #f7f7f7; }
-  .footer__inner {
+  .footer .grid-inner {
     padding: 108px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .footer .adress .city {
-    color: #848789;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 17.87px; }
-  .footer .adress .street {
-    color: #848789;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: italic;
-    line-height: 17.87px; }
-  .footer .adress .mail {
-    color: #848789;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: italic;
-    line-height: 17.87px; }
-  .footer .crafted {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .footer .crafted .sign {
-      color: #848789;
-      font-family: Lato;
-      font-size: 14px;
-      font-style: italic;
-      line-height: 17.87px;
-      margin-right: 10px; }
-  .footer .social {
-    margin-left: 246px;
-    margin-right: 330px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .footer .social__item {
-      width: 35px;
-      height: 34px;
-      border-radius: 50%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "adress social crafted"; }
+    .footer .grid-inner .adress {
+      grid-area: adress; }
+      .footer .grid-inner .adress .city {
+        color: #848789;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 17.87px; }
+      .footer .grid-inner .adress .street {
+        color: #848789;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 17.87px; }
+      .footer .grid-inner .adress .mail {
+        color: #848789;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 17.87px; }
+    .footer .grid-inner .crafted {
+      grid-area: crafted;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .footer .grid-inner .crafted .sign {
+        color: #848789;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 17.87px;
+        margin-right: 10px; }
+    .footer .grid-inner .social {
+      grid-area: social;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -614,14 +508,178 @@ img {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-    .footer .social .fab {
-      color: #ffff; }
-    .footer .social .twitter {
-      background-color: #78cdf0; }
-    .footer .social .facebook {
-      background-color: #537bbd;
-      margin: 0 15px; }
-    .footer .social .pinterest {
-      background-color: #eb5755; }
+      .footer .grid-inner .social__item {
+        width: 35px;
+        height: 34px;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      .footer .grid-inner .social__item:hover {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2); }
+      .footer .grid-inner .social .fab {
+        color: #ffff; }
+      .footer .grid-inner .social .twitter {
+        background-color: #78cdf0; }
+      .footer .grid-inner .social .facebook {
+        background-color: #537bbd;
+        margin: 0 15px; }
+      .footer .grid-inner .social .pinterest {
+        background-color: #eb5755; }
+
+@media (max-width: 1260px) {
+  .grid-bike .b2 .icon {
+    padding-top: 50px;
+    margin-bottom: 10px; }
+  .grid-bike .b2 .title {
+    margin-bottom: 15px; }
+  .grid-bike .b2 .text {
+    padding: 0 30px;
+    text-align: center; } }
+@media (max-width: 1201px) {
+  .new__inner {
+    padding: 50px 0; }
+    .new__inner .icon {
+      margin-bottom: 20px; }
+    .new__inner .title {
+      margin-bottom: 20px; }
+
+  .bicycle-slider .my-slider {
+    padding: 50px 0px; }
+    .bicycle-slider .my-slider .text {
+      margin-bottom: 25px; }
+
+  .stay-on__inner {
+    padding: 50px 0px; }
+
+  .footer .grid-inner {
+    padding: 50px 0px; } }
+@media (max-width: 1025px) {
+  .bicycle-slider .my-slider {
+    padding: 15px; }
+    .bicycle-slider .my-slider__item .wrap .icon {
+      margin-bottom: 20px; }
+    .bicycle-slider .my-slider__item .wrap .title {
+      margin-bottom: 20px; }
+    .bicycle-slider .my-slider__item .wrap .text {
+      margin-bottom: 20px;
+      font-size: 20px; }
+
+  .new__inner {
+    padding: 15px 0; }
+    .new__inner .icon {
+      margin-bottom: 10px; }
+    .new__inner .title {
+      margin-bottom: 20px;
+      font-size: 16px; }
+    .new__inner .text {
+      font-size: 16px;
+      font-weight: 400; }
+
+  .shop__grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-areas: "b1 b2 b3 b4" "b5 b6 b7 b8" "b9 b9 b9 b9"; }
+    .shop__grid-container .box9 {
+      height: 150px; }
+
+  .stay-on__inner {
+    padding: 20px 0; } }
+@media (max-width: 866px) {
+  .bicycle-slider .my-slider {
+    padding: 10px; }
+    .bicycle-slider .my-slider__item .wrap .icon {
+      margin-bottom: 10px; }
+    .bicycle-slider .my-slider__item .wrap .title {
+      margin-bottom: 10px; }
+    .bicycle-slider .my-slider__item .wrap .text {
+      margin-bottom: 10px;
+      font-size: 18px; }
+
+  .bicycle-company .grid-bike {
+    grid-template-rows: 1fr 0.4fr 0.5fr;
+    grid-template-areas: "b1 b1 b1" "b2 b2 b2" "b3 b3 b3"; }
+    .bicycle-company .grid-bike .b1 {
+      height: 300px; }
+    .bicycle-company .grid-bike .b2 .icon {
+      padding-top: 10px; }
+    .bicycle-company .grid-bike .b2 .title {
+      margin: 0; }
+    .bicycle-company .grid-bike .b2 .text {
+      padding: 10px; }
+
+  .vintage .grid-bike {
+    grid-template-rows: 1fr 0.4fr 0.5fr;
+    grid-template-areas: "b1 b1 b1" "b2 b2 b2" "b3 b3 b3"; }
+    .vintage .grid-bike .b1 {
+      height: 300px; }
+    .vintage .grid-bike .b2 .icon {
+      padding-top: 10px; }
+    .vintage .grid-bike .b2 .title {
+      margin: 0; }
+    .vintage .grid-bike .b2 .text {
+      padding: 10px; }
+
+  .retro-bike .grid-bike {
+    grid-template-rows: 1fr 0.4fr 0.4fr 0.4fr;
+    grid-template-areas: "b1 b1 b1" "b2 b2 b2" "b3 b3 b3" "b4 b4 b4"; }
+    .retro-bike .grid-bike .b1 {
+      height: 300px; }
+    .retro-bike .grid-bike .b2 .icon {
+      padding-top: 10px; }
+    .retro-bike .grid-bike .b2 .title {
+      margin: 0; }
+    .retro-bike .grid-bike .b2 .text {
+      padding: 10px; } }
+@media (max-width: 720px) {
+  .header__inner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .header__inner .menu {
+      display: none; }
+    .header__inner .logo {
+      padding: 0; }
+
+  .footer .grid-inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "adress" "social" "crafted"; }
+  .footer .grid-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0; }
+    .footer .grid-inner .adress {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 10px; }
+    .footer .grid-inner .social {
+      margin-bottom: 10px; } }
+@media (max-width: 600px) {
+  .container-fluid .grid-bike .b2 .title {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=style.css.map */
