@@ -288,6 +288,10 @@ img {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -305,9 +309,25 @@ img {
         font-weight: 700;
         text-align: center;
         letter-spacing: 2.8px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        -webkit-transform: translateY(20px);
+                transform: translateY(20px); }
+      .shop__grid-container .box .inner .lil-logo {
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        margin-bottom: 10px;
+        -webkit-transform: translateY(-20px);
+                transform: translateY(-20px); }
     .shop__grid-container .box .inner:hover {
       opacity: 1; }
+    .shop__grid-container .box .inner:hover .title {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px); }
+    .shop__grid-container .box .inner:hover .lil-logo {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px); }
   .shop__grid-container .box1 {
     height: 267px;
     grid-area: b1;
@@ -675,11 +695,62 @@ img {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-bottom: 10px; }
+      margin-bottom: 15px; }
     .footer .grid-inner .social {
-      margin-bottom: 10px; } }
+      margin-bottom: 15px; } }
 @media (max-width: 600px) {
+  .shop__grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: "b1 b2" "b3 b4" "b5 b6" "b7 b8" "b9 b9"; }
+    .shop__grid-container .box9 {
+      height: 150px; }
+
   .container-fluid .grid-bike .b2 .title {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .stay-on__inner .logo {
+    margin-bottom: 10px; }
+  .stay-on__inner .title {
+    margin-bottom: 10px; }
+  .stay-on__inner .form input {
+    margin-bottom: 10px;
+    width: 65%;
+    height: 30px; }
+  .stay-on__inner .form button {
+    height: 54px; } }
+@media (max-width: 440px) {
+  .shop__grid-container .box9 button {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 20px 50px; }
+
+  .stay-on__inner .form input {
+    width: 60%; }
+  .stay-on__inner .form input::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 28px 28px 24px 0px; }
+  .stay-on__inner .form input:-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 28px 28px 24px 0px; }
+  .stay-on__inner .form input::-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 28px 28px 24px 0px; }
+  .stay-on__inner .form input::placeholder {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 28px 28px 24px 0px; }
+  .stay-on__inner .form button {
+    width: 126px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 22px; } }
+@media (max-width: 370px) {
+  .stay-on__inner .form input {
+    width: 200px; } }
 
 /*# sourceMappingURL=style.css.map */
