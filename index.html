@@ -14,32 +14,39 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a class="menu__link" href="http://">about us</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="http://">work</a>
-                    </li>
-                </ul>
+                <nav>
+                    <ul class="menu" id="menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#about us">about us</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#work">work</a>
+                        </li>
+                    </ul>
+                </nav>
                 <div class="logo">
-                    <img src="./img/Logo.png" alt="">
+                    <img src="./img/Logo.png" alt="logo">
                 </div>
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a class="menu__link" href="http://">shop</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="http://">contact</a>
-                    </li>
-                </ul>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#shop">shop</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="burger-menu" id="burger">
+                    <span></span>
+                </div>
             </div>
 
         </div>
 
     </header>
     <main>
-        <section class="new">
+        <section class="new" id="about us">
             <div class="container">
                 <div class="new__inner" data-aos="fade-right" data-aos-duration="1000"  data-aos-delay="300">
                     <div class="icon">
@@ -59,7 +66,7 @@
                 </div>
             </div>
         </section>
-        <section class="bicycle-company">
+        <section class="bicycle-company" id="work">
             <div class="container-fluid">
                 <div class="grid-container grid-bike">
                     <div class="b1" data-aos="fade-right" data-aos-duration="1000"  data-aos-delay="500">
@@ -189,7 +196,7 @@
             </div>
         </section>
 
-        <section class="shop">
+        <section class="shop" id="shop">
             <div class="container-fluid">
                 <div class="shop__grid-container">
                     <div class="box1 box">
@@ -248,7 +255,7 @@
             </div>
         </section>
 
-        <section class="stay-on">
+        <section class="stay-on" id="contact">
             <div class="container">
                 <div class="stay-on__inner">
                     <div class="logo">
@@ -265,7 +272,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="grid-inner">
                 <div class="adress">
