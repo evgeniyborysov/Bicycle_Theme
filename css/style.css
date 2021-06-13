@@ -95,6 +95,7 @@ img {
     margin-right: 70px; }
 
 .new {
+  overflow: hidden;
   background-color: #f7f7f7; }
   .new__inner {
     padding: 117px 0 142px 0;
@@ -127,28 +128,34 @@ img {
     line-height: 34px;
     text-align: center; }
 
-.bicycle-company .grid-container {
-  grid-template-areas: "b1 b1 b2" "b1 b1 b3"; }
-  .bicycle-company .grid-container .b1 {
-    background-image: url("../img/bicycle company/bicycle_company.jpg"); }
-  .bicycle-company .grid-container .b3 {
-    background-image: url("../img/bicycle company/Bicycle_saddle.jpg"); }
+.bicycle-company {
+  overflow: hidden; }
+  .bicycle-company .grid-container {
+    grid-template-areas: "b1 b1 b2" "b1 b1 b3"; }
+    .bicycle-company .grid-container .b1 {
+      background-image: url("../img/bicycle company/bicycle_company.jpg"); }
+    .bicycle-company .grid-container .b3 {
+      background-image: url("../img/bicycle company/Bicycle_saddle.jpg"); }
 
-.vintage .grid-container {
-  grid-template-areas: "b2 b1 b1" "b3 b1 b1"; }
-  .vintage .grid-container .b1 {
-    background-image: url("../img/vintage/Vintage_bicycle.jpg"); }
-  .vintage .grid-container .b3 {
-    background-image: url("../img/vintage/Bicycle_saddle.jpg"); }
+.vintage {
+  overflow: hidden; }
+  .vintage .grid-container {
+    grid-template-areas: "b2 b1 b1" "b3 b1 b1"; }
+    .vintage .grid-container .b1 {
+      background-image: url("../img/vintage/Vintage_bicycle.jpg"); }
+    .vintage .grid-container .b3 {
+      background-image: url("../img/vintage/Bicycle_saddle.jpg"); }
 
-.retro-bike .grid-container {
-  grid-template-areas: "b1 b2 b3" "b1 b4 b3"; }
-  .retro-bike .grid-container .b1 {
-    background-image: url("../img/retro bike/Retro_frame.jpg"); }
-  .retro-bike .grid-container .b3 {
-    background-image: url("../img/retro bike/Retro_bicycle.jpg"); }
-  .retro-bike .grid-container .b4 {
-    background-image: url("../img/retro bike/Retro_wheel.jpg"); }
+.retro-bike {
+  overflow: hidden; }
+  .retro-bike .grid-container {
+    grid-template-areas: "b1 b2 b3" "b1 b4 b3"; }
+    .retro-bike .grid-container .b1 {
+      background-image: url("../img/retro bike/Retro_frame.jpg"); }
+    .retro-bike .grid-container .b3 {
+      background-image: url("../img/retro bike/Retro_bicycle.jpg"); }
+    .retro-bike .grid-container .b4 {
+      background-image: url("../img/retro bike/Retro_wheel.jpg"); }
 
 .grid-bike {
   display: grid;
@@ -297,116 +304,118 @@ img {
       .bicycle-slider .my-slider .slick-dots li[class="slick-active"] button {
         background-color: #a9afb3; }
 
-.shop__grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 0.7fr;
-  gap: 0px 0px;
-  grid-template-areas: "b1 b2 b4 b5 b6 b6" "b3 b3 b4 b5 b7 b8" "b9 b9 b9 b9 b9 b9"; }
-  .shop__grid-container .box {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer; }
-    .shop__grid-container .box .inner {
-      width: 100%;
-      height: 100%;
+.shop {
+  overflow: hidden; }
+  .shop__grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.7fr;
+    gap: 0px 0px;
+    grid-template-areas: "b1 b2 b4 b5 b6 b6" "b3 b3 b4 b5 b7 b8" "b9 b9 b9 b9 b9 b9"; }
+    .shop__grid-container .box {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer; }
+      .shop__grid-container .box .inner {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background: rgba(100, 194, 158, 0.7);
+        opacity: 0;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s; }
+        .shop__grid-container .box .inner .title {
+          color: #ffffff;
+          font-family: Lato;
+          font-size: 14px;
+          font-weight: 700;
+          text-align: center;
+          letter-spacing: 2.8px;
+          text-transform: uppercase;
+          -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+          -webkit-transform: translateY(20px);
+                  transform: translateY(20px); }
+        .shop__grid-container .box .inner .lil-logo {
+          -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+          margin-bottom: 10px;
+          -webkit-transform: translateY(-20px);
+                  transform: translateY(-20px); }
+      .shop__grid-container .box .inner:hover {
+        opacity: 1; }
+      .shop__grid-container .box .inner:hover .title {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px); }
+      .shop__grid-container .box .inner:hover .lil-logo {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px); }
+    .shop__grid-container .box1 {
+      height: 267px;
+      grid-area: b1;
+      background-image: url("../img/bike shop/shop_box1.jpg"); }
+    .shop__grid-container .box2 {
+      grid-area: b2;
+      background-image: url("../img/bike shop/shop_box2.jpg"); }
+    .shop__grid-container .box3 {
+      grid-area: b3;
+      background-image: url("../img/bike shop/shop_box3.jpg"); }
+    .shop__grid-container .box4 {
+      grid-area: b4;
+      background-image: url("../img/bike shop/shop_box4.jpg"); }
+    .shop__grid-container .box5 {
+      grid-area: b5;
+      background-image: url("../img/bike shop/shop_box5.jpg"); }
+    .shop__grid-container .box6 {
+      grid-area: b6;
+      background-image: url("../img/bike shop/shop_box6.jpg"); }
+    .shop__grid-container .box7 {
+      grid-area: b7;
+      background-image: url("../img/bike shop/shop_box7.jpg"); }
+    .shop__grid-container .box8 {
+      grid-area: b8;
+      background-image: url("../img/bike shop/shop_box8.jpg"); }
+    .shop__grid-container .box9 {
+      grid-area: b9;
+      height: 200px;
+      background-color: #282f35;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      background: rgba(100, 194, 158, 0.7);
-      opacity: 0;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s; }
-      .shop__grid-container .box .inner .title {
+              align-items: center; }
+      .shop__grid-container .box9 button {
         color: #ffffff;
         font-family: Lato;
         font-size: 14px;
         font-weight: 700;
         text-align: center;
-        letter-spacing: 2.8px;
         text-transform: uppercase;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        -webkit-transform: translateY(20px);
-                transform: translateY(20px); }
-      .shop__grid-container .box .inner .lil-logo {
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        margin-bottom: 10px;
-        -webkit-transform: translateY(-20px);
-                transform: translateY(-20px); }
-    .shop__grid-container .box .inner:hover {
-      opacity: 1; }
-    .shop__grid-container .box .inner:hover .title {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px); }
-    .shop__grid-container .box .inner:hover .lil-logo {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px); }
-  .shop__grid-container .box1 {
-    height: 267px;
-    grid-area: b1;
-    background-image: url("../img/bike shop/shop_box1.jpg"); }
-  .shop__grid-container .box2 {
-    grid-area: b2;
-    background-image: url("../img/bike shop/shop_box2.jpg"); }
-  .shop__grid-container .box3 {
-    grid-area: b3;
-    background-image: url("../img/bike shop/shop_box3.jpg"); }
-  .shop__grid-container .box4 {
-    grid-area: b4;
-    background-image: url("../img/bike shop/shop_box4.jpg"); }
-  .shop__grid-container .box5 {
-    grid-area: b5;
-    background-image: url("../img/bike shop/shop_box5.jpg"); }
-  .shop__grid-container .box6 {
-    grid-area: b6;
-    background-image: url("../img/bike shop/shop_box6.jpg"); }
-  .shop__grid-container .box7 {
-    grid-area: b7;
-    background-image: url("../img/bike shop/shop_box7.jpg"); }
-  .shop__grid-container .box8 {
-    grid-area: b8;
-    background-image: url("../img/bike shop/shop_box8.jpg"); }
-  .shop__grid-container .box9 {
-    grid-area: b9;
-    height: 200px;
-    background-color: #282f35;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .shop__grid-container .box9 button {
-      color: #ffffff;
-      font-family: Lato;
-      font-size: 14px;
-      font-weight: 700;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 2.8px;
-      padding: 20px 55px;
-      background-color: transparent;
-      cursor: pointer;
-      border: 1px solid #5e6368; }
-    .shop__grid-container .box9 button:hover {
-      color: #64c29e;
-      border: 1px solid #64c29e; }
+        letter-spacing: 2.8px;
+        padding: 20px 55px;
+        background-color: transparent;
+        cursor: pointer;
+        border: 1px solid #5e6368; }
+      .shop__grid-container .box9 button:hover {
+        color: #64c29e;
+        border: 1px solid #64c29e; }
 
 .stay-on__inner {
   padding: 109px 0 111px 0;
